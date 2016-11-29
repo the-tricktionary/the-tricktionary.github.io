@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width , initial-scale=1" name="viewport">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="theme-color" content="#fe3500">
+    <link rel="stylesheet" href="https://the-tricktionary.com/static/css/style.css">
+    <link rel="icon" href="https://the-tricktionary.com/static/img/icon.png">
+    <title>the Tricktionary</title>
+</head>
+<body>
+<nav>
+    <ul class="topnav">
+        <li id="icon" class="pointer"><img src="https://the-tricktionary.com/static/img/tricktionary2.svg">
+            <div>&nbsp;<span class="small">the</span>Tricktionary</div>
+        </li>
+        <li><a onclick="toggleNav()" href="https://the-tricktionary.com/">Tricks</a></li>
+        <li><a onclick="toggleNav()" href="https://the-tricktionary.com/speed">Speed</a></li>
+        <li><a onclick="toggleNav()" href="https://the-tricktionary.com/news">News</a></li>
+        <li><a target="_blank" onclick="toggleNav()" href="https://the-tricktionary.com/android/">App</a></li>
+        <li><a onclick="toggleNav()" href="https://the-tricktionary.com/contact">Contact</a></li>
+        <li class="icon" onclick="toggleNav()">☰</li>
+    </ul>
+</nav>
+<h1>Thank you for your donation!</h1>
+<p>
+    We couldn't thank you wnough - this will make a big difference for us!
+</p>
+
+<script>
+function toggleNav() {
+  document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+  document.getElementsByTagName("nav")[0].classList.toggle("responsive");
+}
+document.getElementById("icon").addEventListener("click", function() {
+    window.location.assign("https://the.tricktionary.com/");
+})
+</script>
