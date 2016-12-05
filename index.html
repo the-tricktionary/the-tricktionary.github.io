@@ -16,6 +16,11 @@
         <li class="pointer"><img src="https://the-tricktionary.com/static/img/tricktionary2.svg"/>
             <div>&nbsp;<span class="small">the</span>Tricktionary Docs</div>
         </li>
+        <li><a href="https://github.com/the-tricktionary/web" onclick="toggleNav()">Web</a></li>
+        <li><a href="https://github.com/the-tricktionary/android" onclick="toggleNav()">Android</a></li>
+        <li><a href="https://github.com/the-tricktionary/ios" onclick="toggleNav()">iOS</a></li>
+        <li><a href="https://github.com/the-tricktionary/the-tricktionary.github.io" onclick="toggleNav()">docs</a></li>
+        <li class="icon" onclick="toggleNav()">&#9776;</li>
     </ul>
 </nav>
 <p style="line-height: 1.5em;">
@@ -27,3 +32,13 @@
     <a href="https://github.com/the-tricktionary/android" class="pr center"><i class="fa fa-github-square" style="font-size: 25vw;"></i><br/>Android</a>
 </p>
 <script src="https://use.fontawesome.com/c155942a7f.js"></script>
+<script>
+function toggleNav() {
+  document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+  document.getElementsByTagName("nav")[0].classList.toggle("responsive");
+}
+document.getElementById("icon").addEventListener("click", function() {
+    window.location.assign("https://the-tricktionary.com/");
+})
+</script>
+
