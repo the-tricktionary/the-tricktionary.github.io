@@ -1,0 +1,45 @@
+<html>
+<head>
+  <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+  <title>Generate sbbreviation for speed event</title>
+</head>
+<body>
+<div id="app">
+<table>
+<tr>
+<td><label for="pt1">Rope variant:</label></td>
+    <td><label><i class="fa fa-caret-down"></i><select id="pt1" v-model="pt1">
+    <option value="sr" selected>Single Rope</option>
+    <option value="dd">Double Dutch</option>
+    </select></label></td>
+</tr>
+<tr>
+<td><label for="pt2">People involved:</label></td>
+    <td><select id="pt2" v-model="pt2">
+    <option value="s" selected>One</option>
+    <option value="p">Two</option>
+    <option value="t">Three</option>
+    <option value="f">Four</option>
+    </select></td>
+</tr>
+<tr>
+<td><label for="pt3">Jump Type:</label></td>
+    <td><select id="pt3" v-model="pt3">
+    <option value="s" selected>Speed</option>
+    <option value="p">Power</option>
+    </select></td>
+  </tr>
+</table>
+<br/>
+Gives this abbreviation: <pre>{{ pt1 }}{{ pt2 }}{{ pt3 }}</pre>
+</div>
+<script>
+var app = new Vue({
+  el: '#app',
+  data: {
+    'pt1': 'sr',
+    'pt2': 's',
+    'pt3': 's'
+  }
+})
+</script>
