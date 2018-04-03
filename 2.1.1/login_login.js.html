@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>login/login.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.about.html">about</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.about.AboutCtrl.html">AboutCtrl</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.about.rafiki.html">rafiki</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.coach.html">coach</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.coach.CoachCtrl.html">CoachCtrl</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.contact.html">contact</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.contact.ContactCtrl.html">ContactCtrl</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.dash.html">dash</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.dash.DashCtrl.html">DashCtrl</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.details.html">details</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.details.DetailsCtrl.html">DetailsCtrl</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.login.html">login</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.news.html">news</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.news.loginCtrl.html">loginCtrl</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.news.newsCtrl.html">newsCtrl</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.profile.html">profile</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.profile.details.html">details</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.profile.details.ProfileDetailsCtrl.html">ProfileDetailsCtrl</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.profile.ProfileCtrl.html">ProfileCtrl</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.speed.html">speed</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.speed.compare.html">compare</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.speed.compare.SpeedCompareCtrl.html">SpeedCompareCtrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="trick.speed.compare.SpeedCompareCtrl.html#.arrayMax">arrayMax</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="trick.speed.compare.SpeedCompareCtrl.html#.parse">parse</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.speed.details.html">details</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.speed.details.SpeedDetailsCtrl.html">SpeedDetailsCtrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="trick.speed.details.SpeedDetailsCtrl.html#.arrayMax">arrayMax</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="trick.speed.details.SpeedDetailsCtrl.html#.arrayMax">arrayMax</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="trick.speed.details.SpeedDetailsCtrl.html#.parse">parse</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="trick.speed.details.SpeedDetailsCtrl.html#.parse">parse</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="trick.speed.SpeedCtrl.html">SpeedCtrl</a></span></li><li class="nav-heading">Namespaces</li><li class="nav-heading"><span class="nav-item-type type-namespace">N</span><span class="nav-item-name"><a href="trick.html">trick</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#initializeApp">initializeApp</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#len">len</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#newMeta">newMeta</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#outData">outData</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#toggleNav">toggleNav</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">login/login.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict'
+/* global angular, firebase */
+/**
+ * @class trick.login
+ * @memberOf trick
+ * @requires ngRoute
+ * @requires ngSanitize
+ */
+angular.module('trick.login', ['ngRoute', 'ngSanitize'])
+
+  .config([
+    '$routeProvider',
+    function ($routeProvider) {
+      $routeProvider.when('/login', {
+        templateUrl: '/login/login.html',
+        controller: 'LoginCtrl'
+      })
+    }
+  ])
+
+  /**
+   * @class trick.news.loginCtrl
+   * @param {service} $scope
+   * @param {service} Auth
+   * @param {service} Db
+   */
+  .controller('LoginCtrl', function ($scope, Auth, Db) {
+    $scope.Subpage('Login')
+
+    /**
+     * Formatter for error objects
+     * @param  {String} what  email | phone | social
+     * @param  {Object} error {code&lt;String>, message&lt;String>}
+     * @return {String}
+     */
+    $scope.Err = function (what, error) {
+      $scope.err[what] = error.code + ' - ' + error.message
+      return $scope.err[what]
+    }
+
+    /** Stores the result for the captcha and phone verification until the code has been sent */
+    $scope.confirmationResult = undefined
+    /** Weather or not do display certain elements */
+    $scope.display = {
+      'password': true,
+      'phone': true,
+      'google.com': true,
+      'twitter.com': false,
+      'facebook.com': false,
+      'github.com': false,
+      phoneCode: false
+    }
+    /** Providers for linking additional sign in methods */
+    $scope.providers = {
+      google: new firebase.auth.GoogleAuthProvider(),
+      facebook: new firebase.auth.FacebookAuthProvider(),
+      twitter: new firebase.auth.TwitterAuthProvider(),
+      github: new firebase.auth.GithubAuthProvider()
+    }
+    /** object containing formatted error messages */
+    $scope.err = {
+      social: '',
+      email: '',
+      phone: ''
+    }
+    /** values of the input fields */
+    $scope.auth = {
+      email: '',
+      password: '',
+      phone: '',
+      phoneCode: ''
+    }
+    /** the recaptcha */
+    $scope.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('phone-sign-in', {
+      'size': 'invisible',
+      'callback': function (response) {
+        // reCAPTCHA solved, allow signInWithPhoneNumber.
+        $scope.test = true
+      }
+    })
+
+    /**
+     * Takes $scope.auth.phone and sends a verification code if $scope.RecaptchaVerifier
+     * has passed
+     * @return {Undefined} Does not return
+     */
+    $scope.phoneSendCode = function () {
+      if ($scope.user) {
+        $scope.user
+          .linkWithPhoneNumber($scope.auth.phone, $scope.recaptchaVerifier)
+          .then(function (confirmationResult) {
+            // SMS sent
+            $scope.confirmationResult = confirmationResult
+            $scope.display.phoneCode = true
+            $scope.$apply()
+          })
+          .catch(function (err) {
+            // Error; SMS not sent
+            $scope.recaptchaVerifier.render()
+              .then(function (widgetId) {
+                $scope.recaptchaVerifier.reset(widgetId)
+              })
+            $scope.Err('phone', err)
+          })
+      } else {
+        firebase.auth()
+          .signInWithPhoneNumber($scope.auth.phone, $scope.recaptchaVerifier)
+          .then(function (confirmationResult) {
+            // SMS sent
+            $scope.confirmationResult = confirmationResult
+            $scope.display.phoneCode = true
+            $scope.$apply()
+          })
+          .catch(function (err) {
+            // Error; SMS not sent
+            $scope.recaptchaVerifier.render()
+              .then(function (widgetId) {
+                $scope.recaptchaVerifier.reset(widgetId)
+              })
+            $scope.Err('phone', err)
+          })
+      }
+    }
+
+    /**
+     * Checks if the code sent by $scope.phoneSendCode is valid and signs the user in
+     * @return {Undefined}
+     */
+    $scope.phoneSignIn = function () {
+      $scope.confirmationResult.confirm($scope.auth.phoneCode)
+      .then(function (user) {
+        $scope.confirmationResult = undefined
+        $scope.display.phoneCode = false
+        $scope.$apply()
+      })
+      .catch(function (err) {
+        // User couldn't sign in (bad verification code?)
+        $scope.Err('phone', err)
+      })
+    }
+
+    /**
+     * Opens a popup to sign in with a social auth provider
+     * @param  {String}    what google | facebook | twitter | GitHub
+     * @return {Undefined}
+     */
+    $scope.socialSignIn = function (what) {
+      if ($scope.user) {
+        $scope.user.linkWithPopup($scope.providers[what])
+        .then(function () {
+          $scope.display[what + '.com'] = false
+          $scope.$apply()
+        })
+        .catch(function (err) {
+          $scope.Err('social', err)
+        })
+      } else {
+        Auth.$signInWithPopup(what)
+          .catch(function (err) {
+            $scope.Err('social', err)
+          })
+      }
+    }
+
+    /**
+     * takes $scope.auth.email, $scope.auth.password and signs the user in
+     * @return {Undefined}
+     */
+    $scope.emailSignIn = function () {
+      Auth.$signInWithEmailAndPassword($scope.auth.email, $scope.auth.password)
+        .catch(function (err) {
+          $scope.Err('email', err)
+        })
+    }
+
+    /**
+     * takes $scope.auth.email, $scope.auth.password and signs the user up
+     * @return {Undefined}
+     */
+    $scope.emailSignUp = function () {
+      var email = $scope.auth.email
+      var password = $scope.auth.password
+      Auth.$createUserWithEmailAndPassword(email, password)
+      .then(function (user) {
+        user.sendEmailVerification()
+        $scope.auth.email = email
+        $scope.auth.password = password
+        $scope.signIn('email')
+      })
+      .catch(function (err) {
+        $scope.Err('email', err)
+      })
+    }
+
+    /**
+     * Wrapper function to call the correct signIn function
+     * @param  {String} what email | phone | google | facebook | twitter | github
+     * @return {Undefined}
+     */
+    $scope.signIn = function (what) {
+      if (what === 'google' || what === 'facebook' || what === 'twitter' || what === 'github') {
+        $scope.socialSignIn(what)
+      } else if (what === 'email') {
+        $scope.emailSignIn()
+      } else if (what === 'phone') {
+        if ($scope.confirmationResult) {
+          $scope.phoneSignIn()
+        } else {
+          $scope.phoneSendCode()
+        }
+      }
+    }
+
+    /**
+     * Change rhe users email or password (potentially even phone number)
+     * @param  {String} what email | password
+     * @return {Undefined}
+     */
+    $scope.change = function (what) {
+      if (what === 'email') {
+        $scope.user.updateEmail($scope.auth.email)
+        .then(function () {
+          $scope.user.sendEmailVerification()
+        })
+        .catch(function (err) {
+          $scope.Err('email', err)
+        })
+      } else if (what === 'password') {
+        if (!$scope.display.password) {
+          $scope.user.updatePassword($scope.auth.password)
+          .catch(function (err) {
+            $scope.Error('email', err)
+          })
+        } else {
+          var credential = new firebase.auth.EmailAuthProvider.credential($scope.auth.email, $scope.auth.password) // eslint-disable-line
+          $scope.user.linkWithCredential(credential)
+          .then(function () {
+            $scope.display.password = false
+            $scope.$apply()
+          })
+          .catch(function (err) {
+            $scope.Err('email', err)
+          })
+        }
+      } else if (what === 'phone') {
+        $scope.Err('phone', {code: 'auth/not-implemented', message: 'Unfortunately this is not yet possible'})
+      }
+    }
+
+    Auth.$onAuthStateChanged(function (user) {
+      var k = Object.keys($scope.display)
+      var i
+
+      for (i = 0; i &lt; k.length; i++) {
+        if ($scope.display[k[i]] === false &amp;&amp; k[i] !== 'phoneCode') {
+          $scope.display[k[i]] = true
+        }
+        if ($scope.display[k[i]] === true &amp;&amp; k[i] === 'phoneCode') {
+          $scope.display[k[i]] = false
+        }
+      }
+      $scope.user = undefined
+      $scope.auth = {
+        email: '',
+        password: '',
+        phone: '',
+        phoneCode: ''
+      }
+      $scope.success = ''
+
+      if (user) {
+        $scope.user = user
+        var p = user.providerData
+
+        $scope.success = 'You are signed in! you can connect multiple ways to sign in below or change what you already have set'
+
+        for (i = 0; i &lt; p.length; i++) {
+          if ($scope.display[p[i].providerId] === true) {
+            $scope.display[p[i].providerId] = false
+          }
+        }
+
+        $scope.auth.email = user.email || ''
+        $scope.auth.phone = user.phoneNumber || ''
+
+        Db.child('users/' + $scope.user.uid + '/profile')
+          .update({
+            'name': $scope.user.displayName.split(' '),
+            'image': $scope.user.providerData[0].photoURL
+          })
+      }
+    })
+  })
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Tue Apr 03 2018 10:53:22 GMT+0000 (UTC) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
